@@ -4,7 +4,7 @@
 //  FPLinearLayout is a view container that automatically handles children
 //  positions for you in a linear fashion.
 //
-//  Created by FingertiP on 7/3/13.
+//  Created by FingertiP - Warut Surapat on 7/3/13.
 //  Copyright (c) 2013, FingertiP. All rights reserved.
 //
 //  http://www.fingertip.in.th
@@ -28,7 +28,7 @@
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  THIS SOFTWARE IS PROVIDED BY FINGERTIP AND CONTRIBUTORS
   "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
   A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
