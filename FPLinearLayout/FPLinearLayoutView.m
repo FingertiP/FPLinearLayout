@@ -95,7 +95,14 @@ const int kDefaultItemMargin = 5;
  * Append a view with to current view with default margin.
  */
 - (void)appendView:(UIView*)view {
-  [self appendView:view marginLeft:kDefaultItemMargin marginTop:kDefaultItemMargin];
+  switch (self.direction) {
+    case kLinearVertical:
+      [self appendView:view marginLeft:0 marginTop:kDefaultItemMargin];
+      break;
+    case kLinearHorizontal:
+      [self appendView:view marginLeft:kDefaultItemMargin marginTop:0];
+      break;
+  }
 }
 
 /**
@@ -136,7 +143,7 @@ const int kDefaultItemMargin = 5;
   }
   else {
     CGRect frame = view.frame;
-    view.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    view.frame = CGRectMake(left, top, frame.size.width, frame.size.height);
   }
 
   [self.items addObject:view];
