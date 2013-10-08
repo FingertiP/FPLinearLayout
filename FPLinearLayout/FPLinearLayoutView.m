@@ -157,7 +157,11 @@ const int kDefaultItemMargin = 5;
  * Flush all view's children and re-adding them from items array.
  */
 - (void)reset {
-    // TODO: Implement.
+  for (UIView* view in self.subviews) {
+    [view removeFromSuperview];
+  }
+  [self.items removeAllObjects];
+  [self.itemsMargins removeAllObjects];
 }
 
 /**
@@ -199,5 +203,6 @@ const int kDefaultItemMargin = 5;
       self.boundSize.height);
   }
 }
+
 
 @end

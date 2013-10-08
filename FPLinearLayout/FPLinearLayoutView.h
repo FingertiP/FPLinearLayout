@@ -4,7 +4,7 @@
 //  FPLinearLayout is a view container that automatically handles children
 //  positions for you in a linear fashion.
 //
-//  Created by FingertiP - Warut Surapat on 7/3/13.
+//  Created by FingertiP on 7/3/13.
 //  Copyright (c) 2013, FingertiP. All rights reserved.
 //
 //  http://www.fingertip.in.th
@@ -56,5 +56,6 @@ typedef enum{
 
 - (void)appendView:(UIView*)view;
 - (void)appendView:(UIView*)view marginLeft:(CGFloat)left marginTop:(CGFloat)top;
+- (void)reset;
 
 @end
